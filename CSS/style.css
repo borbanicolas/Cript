@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+:root{
+    --main-color: #e8786e;
+    --black:#555;
+    --light-color:#777;
+    --bg:#fceae9;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+
+}
+*{
+    text-decoration: none;
+
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding: 9rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background:#fff ;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+
+    .header .navbar a{
+        font-size: 1.7rem;
+        color: var(--light-color);
+        margin-left: 2rem;
+    }
+    
+    .header .navbar a:hover{
+        color: var(--main-color);
+        font-weight: bolder;
+}
+.home{
+   
+    gap:1.5rem;
+    padding-top: 10rem;
+    background: var(--bg);
+    width: 1080px;
+    height: 700px;
+   align-items: center;
+    }
+    .home .box{
+        width: 300px;
+        height: 200px;
+        background: #fff;
+        position: absolute;
+        top: 00%;
+        left: 50%;
+        margin-top: 200px;
+        margin-left: -150px;
+        border-radius: .5rem;
+    }
+
+    .btn{
+        width: 100px;
+        height: 27px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: white;
+        border-radius: .5rem;
+        display: inline-block;
+        margin: auto;
+        background: var(--main-color);
+        cursor: pointer;
+        box-shadow: var(--box-shadow);
+        text-align: center;
+        z-index: 0;
+        font-size: 18px;
+        overflow: hidden;
+
+    }
+    .btn::before{
+        content: '';
+        position: absolute;
+        top: 0; right: 0;
+        height: 100%;
+        width: 0%;
+        background:var(--black);
+        z-index: -1;
+        transition: .2s ease-out;
+    }
+    .btn:hover::before{
+        left: 0;
+        width:100%;
+    }
+    .home .cloud{
+        position: absolute;
+        bottom: 0; right: 0; left: 0;
+        height: 18rem;
+        background-size: 250rem 18rem;
+        background: url(../imagens/cloud.png);
+        animation: cloud 30s linear infinite;
+        
+    }
+
+@keyframes cloud {
+    0%{
+        background-position-x: 0rem;
+    }
+    100% {
+        background-position-x: -250rem;
+    }
+}
+.home .cloud-1{
+    opacity: .6rem;
+    height: 20rem;
+    background-size: 250rem 20 rem;
+    animation-direction: reverse;
+    animation-duration: 15s;
+}
+
+.key{
+    gap:1.5rem;
+    padding-top: 10rem;
+    background: white;
+    width: 1080px;
+    height: 700px;
+   align-items: center;
+}
+
+.key .box-2{
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    top: 00%;
+    left: 50%;
+    margin-top: 1080px;
+    margin-left: -150px;
+    border-radius: .5rem;
+
+}

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
 :root{
-    --main-color: #e8786e;
-    --black:#555;
+    --main-color: #1877f2;
+    --black:#d3d3d3   ;
     --light-color:#777;
-    --bg:#fceae9;
+    --bg: #87ceeb;
     --border: .1rem solid rgba(0,0,0,.1);
     --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
 
@@ -15,12 +15,11 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-padding: 9rem;
     overflow-x: hidden;
+    margin-left: -1rem;
+    margin-right: -10rem;
 }
-section{
-    padding: 2rem 9%;
-}
+
 
 .header{
     position: fixed;
@@ -53,11 +52,11 @@ section{
 .home{
    
     gap:1.5rem;
-    padding-top: 10rem;
+    
     background: var(--bg);
-    width: 1080px;
-    height: 700px;
-   align-items: center;
+    width: 1263px;
+    height: 800px;
+    align-items: center;
     }
     .home .box{
         width: 300px;
@@ -69,17 +68,22 @@ section{
         margin-top: 200px;
         margin-left: -150px;
         border-radius: .5rem;
+        text-align: center;
+        
+        
+       
+       
     }
 
     .btn{
-        width: 100px;
-        height: 27px;
+        width: 150px;
+        height: 30px;
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        color: white;
+        color: whitesmoke;
         border-radius: .5rem;
         display: inline-block;
         margin: auto;
@@ -87,8 +91,9 @@ section{
         cursor: pointer;
         box-shadow: var(--box-shadow);
         text-align: center;
+        align-items: center ;
         z-index: 0;
-        font-size: 18px;
+        font-size: 22px;
         overflow: hidden;
 
     }
@@ -98,13 +103,15 @@ section{
         top: 0; right: 0;
         height: 100%;
         width: 0%;
-        background:var(--black);
+        background:#ff1e00;
         z-index: -1;
         transition: .2s ease-out;
+        
     }
     .btn:hover::before{
         left: 0;
         width:100%;
+        color: black;
     }
     .home .cloud{
         position: absolute;
@@ -131,14 +138,24 @@ section{
     animation-direction: reverse;
     animation-duration: 15s;
 }
+.home img{
+    max-height:30%;
+    max-width: 30%;
+    margin-left: 830px;
+    margin-top: 210px;
+}
+  
+
 
 .key{
-    gap:1.5rem;
-    padding-top: 10rem;
+  
     background: white;
-    width: 1080px;
-    height: 700px;
-   align-items: center;
+    width: 1363px;
+    height: 1263px;
+    min-height: 900px;
+    min-width: 100%;
+  
+    align-items: center;
 }
 
 .key .box-2{

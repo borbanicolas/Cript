@@ -16,8 +16,7 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    margin-left: -1rem;
-    margin-right: -10rem;
+   
 }
 
 
@@ -35,7 +34,7 @@ html{
 }
 .header .logo{
     font-size: 2.5rem;
-    color: var(--black);
+    color: var(--main-color);
 }
 
 
@@ -54,8 +53,8 @@ html{
     gap:1.5rem;
     
     background: var(--bg);
-    width: 1263px;
-    height: 800px;
+    width: 1366px;
+    height: 660px;
     align-items: center;
     }
     .home .box{
@@ -65,10 +64,11 @@ html{
         position: absolute;
         top: 00%;
         left: 50%;
-        margin-top: 200px;
+        margin-top: 180px;
         margin-left: -150px;
         border-radius: .5rem;
         text-align: center;
+        animation: go-back-sun 1s;
         
         
        
@@ -95,6 +95,9 @@ html{
         z-index: 0;
         font-size: 22px;
         overflow: hidden;
+        animation: go-back-sun 1s;
+        margin-top: 410px;
+
 
     }
     .btn::before{
@@ -138,12 +141,45 @@ html{
     animation-direction: reverse;
     animation-duration: 15s;
 }
-.home img{
-    max-height:30%;
-    max-width: 30%;
-    margin-left: 830px;
-    margin-top: 210px;
+.home .rocket img{
+    max-height:25%;
+    max-width: 25%;
+    margin-left: 30px;
+    margin-top: -180px;
+
 }
+
+.home .sun img{
+    background: transparent;
+    margin-left: 980px;
+    max-height:27%;
+    max-width: 27%;
+    margin-top: 100px;
+    
+   
+}
+.home .sun{
+    animation: go-back-sun 4s;
+}
+.home .rocket img{
+    background: transparent;
+    animation: go-back 3s  ;
+}
+
+@keyframes go-back {
+    0% {
+      transform: translatey(200px);
+    }
+    100% {
+      transform: translatey(0);
+    }
+  }
+  @keyframes go-back-sun {
+ 
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+  
   
 
 
@@ -165,8 +201,12 @@ html{
     position: absolute;
     top: 00%;
     left: 50%;
-    margin-top: 1080px;
+    margin-top: 800px;
     margin-left: -150px;
     border-radius: .5rem;
 
+}
+
+.key .btn {
+    margin-top: 1026px;
 }

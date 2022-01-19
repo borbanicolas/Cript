@@ -106,7 +106,7 @@ html{
         top: 0; right: 0;
         height: 100%;
         width: 0%;
-        background:#00f700;
+        background: red;
         z-index: -1;
         transition: .2s ease-out;
         
@@ -216,4 +216,7 @@ html{
 .key .yoda{
     margin-left: 900px;
     padding-top: 180px;
+}
+.key .btn::before{
+    background: rgb(4, 233, 4);
 }

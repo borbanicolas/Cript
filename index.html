@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypt!</title>
+    <title>Cripto!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,12 +12,12 @@
     <!--header-->
     <header class="header">
 
-        <a href="#home" class="logo">Crypt!</a>
+        <a href="#home" class="logo">Cripto!</a>
         <nav class="navbar">
             <a href="#home">esconder algo você deve</a>
             <a href="#key">Você deve desaprender o que aprendeu</a>
-            <a href="#about">Borba</a>
-            <a href="#portifolio">portifolio</a>
+            <a href="#about">Ir além você deve</a>
+
             
         </nav>
 
@@ -31,10 +31,18 @@
         <div class="rocket">
             <img src="imagens/ship.png" alt="">
         </div>
-        <div class="content">
-            <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
-            <a href="#key" class="btn">esconder algo você deve</a> 
-        </div>
+        <div class="textArea">      
+            <textarea
+              id="criptografia"
+              rows="10"
+              class="box"
+              cols="90"
+              spellcheck="false"
+              autofocus="true"
+              required
+            ></textarea>
+            <a class="btn" onclick="encriptar()">esconder algo você deve</a>
+          </div>
     
             <div class="cloud cloud-1"></div>
             <div class="cloud cloud-2"></div>
@@ -44,7 +52,7 @@
         
     <!--KEY-->
     <section class="key" id="key">
-        <div class="content">  <textarea name="" placeholder="message" class="box-2" id="" cols="30" rows="10"></textarea>
+        <div class="content">  <textarea name="" placeholder="message" class="box-2 uncript" id="" cols="30" rows="10"></textarea>
             <a href="#home" class="btn">Que a Força esteja com você!</a> 
         </div>    
         <div>
@@ -61,6 +69,6 @@
 
 
 
-
+<script src="JS/cripto.js"></script>
 
 </body>

@@ -159,7 +159,8 @@ html{
    
 }
 .home .sun{
-    animation: go-back-sun 4s;
+
+    animation: go-back-sun 8s;
 }
 .home .rocket img{
     background: transparent;

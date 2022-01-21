@@ -52,7 +52,7 @@ html{
    
     gap:1.5rem;
     
-    background: url(imagens/111.gif);
+    background: url(111.gif);
     width: 1366px;
     height: 600px;
     align-items: center;
@@ -122,7 +122,7 @@ html{
         bottom: 0; right: 0; left: 0;
         height: 18rem;
         background-size: 250rem 18rem;
-        background: url(../imagens/cloud.png);
+        background: url(cloud.png);
         animation: cloud 30s linear infinite;
         min-width: 1600px;
         

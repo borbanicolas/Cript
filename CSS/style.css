@@ -71,6 +71,7 @@ html{
         animation: go-back-sun 1s;
         
         
+        
        
        
     }
@@ -123,6 +124,7 @@ html{
         background-size: 250rem 18rem;
         background: url(../imagens/cloud.png);
         animation: cloud 30s linear infinite;
+        min-width: 1600px;
         
     }
 
@@ -188,8 +190,8 @@ html{
   
     background: white;
     width: 1363px;
-    height: 1263px;
-    min-height: 900px;
+    height: 650px;
+    min-height: 500px;
     min-width: 100%;
   
     align-items: center;
@@ -221,4 +223,38 @@ html{
 }
 .key .btn::before{
     background: rgb(4, 233, 4);
+}
+#alem{
+    min-width: 1636px;
+    min-height: 270px;
+    max-height: 300px;
+    max-height: 200px;
+    background: url(../imagens/111.gif);
+}
+
+
+.container{
+    display: inline-block;
+    margin-left: 600px;
+    
+}
+.github{
+    max-width: 13%;
+    max-height: 13%;
+    margin-top: 100px;
+    
+}
+.linkedn{
+    max-width: 10%;
+    max-height: 10%;    
+    padding-bottom: 120px;
+}
+
+
+.link:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }

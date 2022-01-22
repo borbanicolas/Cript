@@ -345,3 +345,11 @@ html{
     
     }
 }
+@media(max-width: 460px){
+     .logotipo  {
+        margin-left: 80px;
+    }
+    .box{
+    
+    }
+}

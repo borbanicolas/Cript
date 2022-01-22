@@ -185,7 +185,6 @@ html{
   
   
 
-
 .key{
   
     background: white;
@@ -257,4 +256,92 @@ html{
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+.header .navbar.active{
+ transition: scale(1);
+ opacity: 1;
+}
+#menu-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.3rem;
+    border-radius: .5rem;
+    color: var(--main-color);
+    background: var(--bg);
+    display: none;
+}
+
+#menu-btn:hover{
+    color: #fff;
+    background: var(--bg);
+}
+@media( max-width:768px){
+    #menu-btn{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 115%; right: 2rem;
+        background: --main-color;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        border-radius: .5rem;
+        width: 30rem;
+        transition: scale(0);
+        transform-origin: top right;
+        opacity: 0;
+    }
+    .header .navbar.active{
+     transition: scale(1);
+     opacity: 1;
+    }
+ 
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: .5rem; 
+    }
+    header .navbar a:hover{
+        background-color: var(--bg);
+    }
+   
+    .rocket{
+        margin-left: -580px;
+        max-height:90%;
+        max-width: 90%;
+        margin-top: 180px;
+ }
+ @media(max-width:600px){
+     .logo{
+         margin-right: 100px;
+     }
+     .sun{
+         margin-right: 380px;
+         max-height:90%;
+         max-width: 90%;
+     }
+    .rocket{
+        margin-left: -780px;
+        max-height:90%;
+        max-width: 90%;
+        margin-top: 250px;
+    }
+    .row{
+        margin-left: -450px ;
+        max-height:90%;
+        max-width: 90%;
+    
+    }
 }

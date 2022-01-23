@@ -15,6 +15,7 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding: 9rem;
     overflow-x: hidden;
 }
 
@@ -53,7 +54,7 @@ html{
     gap:1.5rem;
     
     background: url(111.gif);
-    width: 1366px;
+    width: 100%;
     height: 600px;
     align-items: center;
     }
@@ -117,33 +118,23 @@ html{
         width:100%;
         color: black;
     }
-    .home .cloud{
-        position: absolute;
-        bottom: 0; right: 0; left: 0;
-        height: 18rem;
-        background-size: 250rem 18rem;
-        background: url(cloud.png);
-        animation: cloud 30s linear infinite;
-        min-width: 1600px;
-        
-    }
-
 
 
 .home .rocket img{
-    max-height:25%;
-    max-width: 25%;
-    margin-left: 970px;
-    margin-top: -280px;
+    max-height:60%;
+    max-width: 60%;
+    margin-left: 840px;
+    margin-top: -250px;
+    
 
 }
 
 .home .sun img{
     background: transparent;
-    margin-left: 35px;
-    max-height:20%;
-    max-width: 20%;
-    margin-top: 100px;
+    margin-left: 5px;
+    max-height:70%;
+    max-width: 70%;
+    
     
    
 }
@@ -175,15 +166,15 @@ html{
 .key{
   
     background: white;
-    width: 1363px;
+    width: 100%;
     height: 850px;
     min-height: 500px;
-    min-width: 100%;
+    
   
     align-items: center;
 }
-
-.key .box2{
+    
+ .box2{
     width: 300px;
     height: 200px;
     background: #fff;
@@ -204,17 +195,15 @@ html{
 
 
 .key .yoda{
-    margin-left: 900px;
+    
     padding-top: 180px;
 }
 .key .btn::before{
     background: rgb(4, 233, 4);
 }
 #alem{
-    min-width: 1636px;
+   width: 100%;
     min-height: 270px;
-    max-height: 300px;
-    max-height: 200px;
     background: url(111.gif);
 }
 
@@ -282,7 +271,7 @@ html{
 .home .copy img {
     display: flex;
     margin-left: 780px;
-    margin-top:-260px;
+    margin-top:-460px;
     position: relative;
     cursor:pointer;
 }
@@ -318,26 +307,25 @@ html{
         background-color: var(--bg);
     }
    
-    .rocket{
-        margin-left: -580px;
-        max-height:90%;
-        max-width: 90%;
-        margin-top: 180px;
- }
+   
+  .key .yoda{
+    
+    padding-top: 430px;}
+
  @media(max-width:600px){
      .logo{
          margin-right: 100px;
      }
      .sun{
          margin-right: 380px;
-         max-height:90%;
-         max-width: 90%;
+        width: 100%;
+        height: 100%;
      }
     .rocket{
         margin-left: -780px;
         max-height:90%;
         max-width: 90%;
-        margin-top: 250px;
+        margin-top: -300px;
     }
     .row{
         margin-left: -450px ;
@@ -347,27 +335,43 @@ html{
     }
     
 }
-@media(max-width: 500px){
-     .logotipo  {
-        margin-left: 50px;
+@media (max-width: 500px){
+   .home{
+       width: 500px;
+   }
+    .tela{
+     margin: auto;
+     display: block;
+     margin: auto;
+     min-width: 350px;
+     max-width: 100%;
+     width: 100%;
+    }
+    .copy{
+        margin-left: -470px;
+        margin-top: 100px;
+    }
+    .logotipo  {
+    
+        left: 50%;
+        display: flex;
+        margin-left:-50px;
+        
     }
     .key .yoda img{
       margin-left: -2000px;
     }
-    .copy{
-        margin-top: -390px;
-        margin-left: -445px
+    
+    .sun{
+        padding-left: 250px;
+        max-height: 50%;
+        max-height: 50%;
     }
-   .tela{
-      
-    max-height: 1500px;
-    max-width: 460px !important;
-    margin: 0;
-    padding: 0;
-    margin: 0 auto;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-   
-   }
+    .home .rocket img{
+     padding-top: 580px;
+     padding-right: 300px;   
+    }
+    .alem{
+        
+    }
 }

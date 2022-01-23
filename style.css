@@ -128,21 +128,8 @@ html{
         
     }
 
-@keyframes cloud {
-    0%{
-        background-position-x: 0rem;
-    }
-    100% {
-        background-position-x: -250rem;
-    }
-}
-.home .cloud-1{
-    opacity: .6rem;
-    height: 20rem;
-    background-size: 250rem 20 rem;
-    animation-direction: reverse;
-    animation-duration: 15s;
-}
+
+
 .home .rocket img{
     max-height:25%;
     max-width: 25%;
@@ -360,15 +347,19 @@ html{
     }
     
 }
-@media(max-width: 450px){
+@media(max-width: 500px){
      .logotipo  {
         margin-left: 50px;
     }
     .key .yoda img{
       margin-left: -2000px;
     }
- 
+    .copy{
+        margin-top: -390px;
+        margin-left: -445px
+    }
    .tela{
+      
     max-height: 1500px;
     max-width: 460px !important;
     margin: 0;

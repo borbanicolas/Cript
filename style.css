@@ -128,22 +128,21 @@ html{
         
     }
 
-    .home .copy img {
-        display: flex;
-        margin-left: 780px;
-        margin-top:-259px;
-        position: relative;
-        cursor: pointer;
+@keyframes cloud {
+    0%{
+        background-position-x: 0rem;
+    }
+    100% {
+        background-position-x: -250rem;
+    }
 }
-
-.copy img:hover{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+.home .cloud-1{
+    opacity: .6rem;
+    height: 20rem;
+    background-size: 250rem 20 rem;
+    animation-direction: reverse;
+    animation-duration: 15s;
 }
-
 .home .rocket img{
     max-height:25%;
     max-width: 25%;
@@ -258,6 +257,13 @@ html{
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
+.copy img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 .header .navbar a{
     font-size: 1.7rem;
     color: var(--light-color);
@@ -286,7 +292,12 @@ html{
     color: #fff;
     background: var(--bg);
 }
-
+.home .copy img {
+    display: flex;
+    margin-left: 780px;
+    margin-top:-260px;
+    position: relative;
+    cursor:pointer;
 }
 @media( max-width:768px){
     #menu-btn{

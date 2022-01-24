@@ -33,6 +33,7 @@ html{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
+    width: auto;
     
 
 }
@@ -214,31 +215,46 @@ html{
 .key .btn::before{
     background: rgb(4, 233, 4);
 }
+
+
+
+
+
 #alem{
-   width: 100%;
+   width: auto;
     min-height: 270px;
     background: url(111.gif);
 }
 
 
-.container{
-    display: inline-block;
-    margin-left: 600px;
+.github {
     
-}
-.github{
-    max-width: 13%;
-    max-height: 13%;
-    margin-top: 100px;
+    max-width: 150px;
+    max-height: 150px;
     
 }
 .linkedn{
-    max-width: 10%;
-    max-height: 10%;    
-    padding-bottom: 120px;
+    
+    max-width: 150px;
+    max-height: 150px;
+    padding-bottom: 150px;
+}
+.container{
+    max-width: 150px;
+    max-height: 150px;
+}
+#alem .row{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 }
 
-
+.container .github img{
+    display: flex;
+    justify-content: flex-end;
+}
 .link:hover{
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -321,19 +337,31 @@ html{
 
  
 @media (max-width: 600px){
+    *{
+     width: 100%;   
+    }
    .home{
+       height: auto;
        width: auto;
+       padding-top: 15px;
    }
-
  .header{
-     position: unset;
-     justify-content: center;
- }
-
+    position:unset;
+}
+.sun{
+    width: 70%;
+    height: 70%;
+}
+.rocket img{
+    padding-top: 150px;
+    width: 70%;
+    height: 70%;
+    
+}
     .key .yoda img{
       margin-left: -2000px;
     }
-    
+  
     
    
 }

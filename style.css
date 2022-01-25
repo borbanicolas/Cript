@@ -290,11 +290,17 @@ html{
     padding-top: 20px;
 }
 .keyContainer{
+    height: 350px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+   }
+.yodacontainer{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
    
-   
-    
 }
 
 
@@ -381,9 +387,7 @@ html{
 
  
 @media (max-width: 600px){
-    *{
-     width: 100%;   
-    }
+    
    .home{
        height: auto;
        width: auto;

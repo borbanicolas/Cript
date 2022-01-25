@@ -143,7 +143,7 @@ html{
         font-size: 22px;
         overflow: hidden;
         animation: go-back-sun 1s;
-        margin-top: 410px;
+        margin-top: 280px;
 
 
     }
@@ -237,6 +237,7 @@ html{
     position: relative;
     cursor:pointer;
 }
+
 @keyframes go-back {
     0% {
       transform: translatex(200px);
@@ -271,7 +272,7 @@ html{
     width: 300px;
     height: 200px;
     background: #fff;
-   
+   position: relative;
     border-radius: .5rem;
     text-align: center;
     
@@ -284,6 +285,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .btncontainer{
@@ -296,13 +298,37 @@ html{
     align-items: center;
     padding-top: 90px;
    }
+   .key .box{
+       z-index: 10;
+   }
 .yodacontainer{
     display: flex;
     justify-content: flex-end;
     z-index: 1;
    
 }
+.copybtn {
+    position: absolute;
+    cursor: pointer;
+    padding-bottom: 45px;
+    left: 80%;
+    
+}
+.copybtn{
+      height: 200px;
+    align-items: flex-start;
+    justify-content: flex-start;
+   z-index: 1;
 
+}
+
+.copy:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 /* */
 #alem{
@@ -346,6 +372,14 @@ html{
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+}
+.linkedn:hover{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 
 

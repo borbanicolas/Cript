@@ -53,6 +53,38 @@ html{
         color: var(--main-color);
         font-weight: bolder;
 }
+
+/*NAV*/
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+.header .navbar.active{
+ transition: scale(1);
+ opacity: 1;
+}
+#menu-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.3rem;
+    border-radius: .5rem;
+    color: var(--main-color);
+    background: var(--bg);
+    display: none;
+}
+
+#menu-btn:hover{
+    color: #fff;
+    background: var(--bg);
+}
+ /*HOME*/
 .home{
     padding-top: 60px;
     gap:1.5rem;
@@ -89,6 +121,10 @@ html{
         padding-top: 200px;
     }
     
+    
+    /*BTNS*/
+
+
     .btn{
         width: 250px;
         height: 30px;
@@ -127,6 +163,46 @@ html{
         width:100%;
         color: black;
     }
+    .btn-2{
+        width: 250px;
+        height: 30px;
+        position: relative;
+        padding-bottom: ;
+        color: whitesmoke;
+        border-radius: .5rem;
+        display: inline-block;
+        margin: auto;
+        background: var(--main-color);
+        cursor: pointer;
+        box-shadow: var(--box-shadow);
+        text-align: center;
+        align-items: center ;
+        z-index: 0;
+        font-size: 22px;
+        overflow: hidden;
+        animation: go-back-sun 1s;
+       
+
+
+    }
+    .btn-2::before{
+        content: '';
+        position: absolute;
+        top: 0; right: 0;
+        height: 100%;
+        width: 0%;
+        background: rgb(23, 211, 64);
+        z-index: -1;
+        transition: .2s ease-out;
+        
+    }
+    .btn-2:hover::before{
+        left: 0;
+        width:100%;
+        color: black;
+    }
+
+
 
 
 .home .rocket img{
@@ -177,6 +253,9 @@ html{
   
   
 
+/* KEYS*/
+
+
 .key{
   
     background: white;
@@ -192,34 +271,34 @@ html{
     width: 300px;
     height: 200px;
     background: #fff;
-    position: absolute;
-    top: 00%;
-    left: 50%;
-    margin-top: 800px;
-    margin-left: -150px;
+   
     border-radius: .5rem;
     text-align: center;
-
-}
-
-.key .btn {
-    margin-top: 1026px;
-    width: 300px;
-}
-
-
-.key .yoda{
     
-    padding-top: 180px;
+} 
+ 
+.key .boxcontainer{
+    display: flex;
+    
+    height: 250px; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.key .btn::before{
-    background: rgb(4, 233, 4);
+
+.btncontainer{
+    padding-top: 20px;
+}
+.keyContainer{
+    display: flex;
+    justify-content: center;
+   
+   
+    
 }
 
 
-
-
-
+/* */
 #alem{
    width: auto;
     min-height: 270px;
@@ -229,19 +308,19 @@ html{
 
 .github {
     
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
     
 }
 .linkedn{
     
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
     padding-bottom: 150px;
 }
 .container{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
 }
 #alem .row{
     height: 300px;
@@ -262,41 +341,8 @@ html{
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
-.copy img:hover{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-.header .navbar a{
-    font-size: 1.7rem;
-    color: var(--light-color);
-    margin-left: 2rem;
-}
 
-.header .navbar a:hover{
-    color: var(--main-color);
-}
 
-.header .navbar.active{
- transition: scale(1);
- opacity: 1;
-}
-#menu-btn{
-    cursor: pointer;
-    font-size: 2.5rem;
-    padding: 1rem 1.3rem;
-    border-radius: .5rem;
-    color: var(--main-color);
-    background: var(--bg);
-    display: none;
-}
-
-#menu-btn:hover{
-    color: #fff;
-    background: var(--bg);
-}
 
 @media( max-width:768px){
     #menu-btn{
@@ -331,9 +377,7 @@ html{
     }
    
    
-  .key .yoda{
-    
-    padding-top: 430px;}
+
 
  
 @media (max-width: 600px){
